@@ -110,7 +110,7 @@ def main():
     print ("Addition Test Closed \n")
 
     print ("division Test")
-    print (division(5,5)) # Expected Result: 1
+    print (division(5,5)) # Expected Result: 1.0
     print (division(5,4)) # Expected Result: 1.25
     print (division(10,5) == 2) # Expected Result: True
     print (division(10,-3) == 0.33333) # Expected Result: False
