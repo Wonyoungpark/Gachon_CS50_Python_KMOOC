@@ -8,7 +8,7 @@ def get_zero_matrix(size):
     #   - size * size 크기의 two dimensional list를 반환함
     #   - list내 모든 값은 다 0으로 입력되어 있음
     # Examples:
-    # >>> import magic_square as ms
+    # >>> import magic_square_game as ms
     # >>> ms.get_zero_matrix(3)
     # [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
     # >>> ms.get_zero_matrix(4)
@@ -34,10 +34,10 @@ def is_validate_number(user_input):
     # Input:
     #   - user_input : 문자열
     # Output:
-    #   - 입력된 문자열이 정수형 문자열이며, 3보다 크고 20보다 작을 경우는 True
+    #   - 입력된 문자열이 정수형 문자열이며, 3보다 크거나 같고 20보다 작을 경우는 True
     #     그렇지 않을 경우에는 False를 반환함
     # Examples:
-    # >>> import magic_square as ms
+    # >>> import magic_square_game as ms
     # >>> ms.is_validate_number("10")
     # True
     # >>> ms.is_validate_number("abc")
@@ -68,7 +68,7 @@ def is_4even_number(size):
     #   - size가 4의 배수일 경우 True
     #     그렇지 않을 경우에는 False를 반환함
     # Examples:
-    # >>> import magic_square as ms
+    # >>> import magic_square_game as ms
     # >>> ms.is_4even_number(16)
     # True
     # >>> ms.is_4even_number(32)
@@ -101,7 +101,7 @@ def is_odd_number(size):
     #   - size가 홀수 일 경우 True
     #     그렇지 않을 경우에는 False를 반환함
     # Examples:
-    # >>> import magic_square as ms
+    # >>> import magic_square_game as ms
     # >>> ms.is_odd_number(3)
     # True
     # >>> ms.is_odd_number(4)
@@ -132,7 +132,7 @@ def get_4even_magic_square(user_input):
     #   - user_input * user_input 크기의 마방진 list를 배열함
     #     ※ 출력되는 값은 반드시 아래와 같을 필요가 없음
     # Examples:
-    # >>> import magic_square as ms
+    # >>> import magic_square_game as ms
     # >>> ms.get_4even_magic_square(4)
     # [[1, 15, 14, 4], [12, 6, 7, 9], [8, 10, 11, 5], [13, 3, 2, 16]]
     # >>> ms.get_4even_magic_square(12)
@@ -166,7 +166,7 @@ def get_odd_magic_square(user_input):
     #   - user_input * user_input 크기의 마방진 list를 배열함
     #     ※ 출력되는 값은 반드시 아래와 같을 필요가 없음
     # Examples:
-    # >>> import magic_square as ms
+    # >>> import magic_square_game as ms
     # >>> ms.get_odd_magic_square(3)
     # [[8, 1, 6], [3, 5, 7], [4, 9, 2]]
     # >>> ms.get_odd_magic_square(5)
@@ -196,7 +196,7 @@ def get_odd_magic_square(user_input):
     #  ===================================
     return magic_sqaure_matrix
 
-def is_magic_sqaure(square):
+def is_magic_square(square):
     # '''
     # Input:
     #   - square : n by n 사이즈로 이루어진 two dimensional list
@@ -204,12 +204,12 @@ def is_magic_sqaure(square):
     #   - 만약 square가 완벽히 마방진 형태이면 True
     #     그렇지 않을 경우 False
     # Examples:
-    # >>> import magic_square as ms
-    # >>> ms.is_magic_sqaure([[1,2,3],[4,5,6],[7,8,9]])
+    # >>> import magic_square_game as ms
+    # >>> ms.is_magic_square([[1,2,3],[4,5,6],[7,8,9]])
     # False
-    # >>> ms.is_magic_sqaure([[5,5,5],[4,5,6],[7,8,9]])
+    # >>> ms.is_magic_square([[5,5,5],[4,5,6],[7,8,9]])
     # False
-    # >>> ms.is_magic_sqaure([[8, 1, 6], [3, 5, 7], [4, 9, 2]])
+    # >>> ms.is_magic_square([[8, 1, 6], [3, 5, 7], [4, 9, 2]])
     # True
     # '''
     result = None
