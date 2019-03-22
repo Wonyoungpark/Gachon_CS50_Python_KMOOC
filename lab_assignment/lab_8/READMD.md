@@ -1,4 +1,4 @@
-Lab #8 - Morse Code (morsecode)
+﻿Lab #8 - Morse Code (morsecode)
 ===============================
 Copyright 2017 © document created by TeamLab.Gachon@gmail.com
 
@@ -100,7 +100,7 @@ tY: -.--\t\nZ: --..\t'
 --------       | ---
 is_help_command | 문자열값을 입력받아 입력된 값이 대소문자 구분없이 "H" 또는 "HELP"일 경우 True, 그렇지 않을 경우 False를 반환함
 is_validated_english_sentence | 문자열값을 입력받아 입력된 값이 모스부호로 변환이 가능하면 True를 불가능하면 False를 반환함. 모스 부호로 변환되는 경우는 아래 세 가지에 해당되지 않는 경우임  1) 숫자가 포함되어 있음, 2) _@#$%^&*()-+=[]{}"';:\|`~ 와 같은 특수문자가 포함되어 있음, 3) 문장부호(.,!?)를 제외하면 입력값이 없거나 빈칸만 입력했을 경우
-is_validated_morse_code | 모스부호 형태의 무자열 값을 입력받아, 알파벳으로 변환이 가능하면 True, 불가능하면 False를 반환함. 알파벳으로 변환되는 경우는 아래 두 가지에 해당되지 않는 경우임 1) "-","."," "외 다른 글자가 포함되어 있는 경우 2) get_morse_code_dict 함수에 정의된 Morse Code 부호외 다른 코드가 입력된 경우 ex)......
+is_validated_morse_code | 모스부호 형태의 문자열 값을 입력받아, 알파벳으로 변환이 가능하면 True, 불가능하면 False를 반환함. 알파벳으로 변환되는 경우는 아래 두 가지에 해당되지 않는 경우임 1) "-","."," "외 다른 글자가 포함되어 있는 경우 2) get_morse_code_dict 함수에 정의된 Morse Code 부호외 다른 코드가 입력된 경우 ex)......
 get_cleaned_english_sentence |  문자열값으로 Morse Code로 변환 가능한 영어 문장을 입력받아, 입력된 영어문장에서 4개의 문장부호를 ".,!?" 삭제하고, 양쪽끝 여백을 제거한 문자열 값 반환
 decoding_character | 문자열값으로 get_morse_code_dict 함수로 알파벳으로 치환이 가능한 값을 입력받아 Morse Code를 알파벳으로 변환한 값을 반환함
 encoding_character | 문자열값으로 알파벳 한 글자의 입력받아 get_morse_code_dict 함수의 반환 값으로 인해 변환된 모스부호 문자열값을 반환함
