@@ -65,7 +65,7 @@ def is_validated_english_sentence(user_input):
         - 입력한 값이 아래에 해당될 경우 False, 그렇지 않으면 True
           1) 숫자가 포함되어 있거나,
           2) _@#$%^&*()-+=[]{}"';:\|`~ 와 같은 특수문자가 포함되어 있거나
-          3) 영어와 문장부호(.,!?)를 제외하면 입력값이 없거나 빈칸만 입력했을 경우
+          3) 문장부호(.,!?)를 제외하면 입력값이 없거나 빈칸만 입력했을 경우
     Examples:
         >>> import morsecode as mc
         >>> mc.is_validated_english_sentence("Hello 123")
