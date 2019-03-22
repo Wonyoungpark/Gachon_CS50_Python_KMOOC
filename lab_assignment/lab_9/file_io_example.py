@@ -25,7 +25,7 @@ def get_number_of_characters_with_blank(filename):
     # Examples:
     # >>> import file_io_example as fie
     # >>> fie.get_number_of_characters_with_blank("1984.txt")
-    # 558841
+    # 558840
     # ===Modify codes below=============
     result = None
 
@@ -75,11 +75,11 @@ def get_number_of_target_words(filename, target_words):
     #   - 대소문자 구분없이 해당 파일에  target_words가 포함된 횟수
     # Examples:
     # >>> import file_io_example as fie
-    # >>> fie.get_number_of_words("1984.txt", "Hi")
+    # >>> fie.get_number_of_target_words("1984.txt", "Hi")
     # 3938
-    # >>> fie.get_number_of_words("1984.txt", "had")
+    # >>> fie.get_number_of_target_words("1984.txt", "had")
     # 1327
-    # >>> fie.get_number_of_words("1984.txt", "and")
+    # >>> fie.get_number_of_target_words("1984.txt", "and")
     # 2750
     # ===Modify codes below=============
     result = None
